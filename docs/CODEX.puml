@@ -1,0 +1,35 @@
+@startuml java-minesweeper
+class MineField {
+    - field: int[]
+    - columns: int
+    - rows: int
+    - mines: int
+    - revealedTiles: int
+    - finished : boolean
+    - won : boolean
+
+    {method} + poke(col: int, row: int): void
+    {method} + isGameWon(): boolean
+    {method} + isGameLost(): boolean
+    {method} + isGameFinished(): boolean
+    {method} - MineField(columns: int, rows: int, mines: int)
+    {method} - checkGameFinished(): boolean
+    {method} + {static} create(columns: int, rows: int, mines: int): MineField
+}
+
+enum Difficulty {
+    EASY(10, 10, 9),
+    MEDIUM(16, 16, 40),
+    HARD(30, 16, 99);
+
+    - columns: int
+    - rows: int
+    - mines: int
+
+    {method} + Difficulty(columns: int, rows: int, mines: int)
+    {method} + getColumns(): int
+    {method} + getRows(): int
+    {method} + getMines(): int
+}
+
+@enduml

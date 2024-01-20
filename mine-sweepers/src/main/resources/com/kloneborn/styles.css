@@ -1,0 +1,61 @@
+/* styles.css */
+
+.tile {
+  -fx-pref-width: 32px;
+  -fx-pref-height: 32px;
+  -fx-background-color: lightgray; /* Default background color for tiles */
+  -fx-border-width: 1;
+  -fx-border-color: darkgray;
+  -fx-alignment: center;
+  -fx-content-display: center;
+  -fx-font-size: 14px;
+}
+
+.blank {
+  -fx-background-color: white; /* Background color for blank tiles */
+}
+
+.flagged {
+  -fx-background-color: #ffcc00; /* Background color for flagged tiles (yellow) */
+}
+
+.revealed {
+  -fx-background-color: #e0e0e0; /* Background color for revealed tiles */
+}
+
+.mine {
+  -fx-background-color: #ff0000; /* Background color for mine tiles (red) */
+  -fx-text-fill: white; /* Text color for mine tiles */
+}
+
+.number1 {
+  -fx-text-fill: blue; /* Text color for number 1 */
+}
+
+.number2 {
+  -fx-text-fill: green; /* Text color for number 2 */
+}
+
+.number3 {
+  -fx-text-fill: red; /* Text color for number 3 */
+}
+
+.number4 {
+  -fx-text-fill: darkblue; /* Text color for number 4 */
+}
+
+.number5 {
+  -fx-text-fill: darkred; /* Text color for number 5 */
+}
+
+.number6 {
+  -fx-text-fill: darkgreen; /* Text color for number 6 */
+}
+
+.number7 {
+  -fx-text-fill: purple; /* Text color for number 7 */
+}
+
+.number8 {
+  -fx-text-fill: black; /* Text color for number 8 */
+}
